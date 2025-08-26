@@ -5,12 +5,25 @@ project:
 website:
   title: "TEST_QUARTO"
   navbar:
+    title: Python Programming
+    background: dark
+    search: true
     left:
       - href: index.qmd
         text: Home
       - about.qmd
       - hello.qmd
-
+  sidebar: 
+    style: "docked"
+    contents:
+    - text: "Introduction"
+      href: hello.qmd
+    - section: "Basics"
+      href: hello.qmd
+      contents:
+        - index.qmd
+        - hello.qmd
+        - hello.qmd    
 format:
   html:
     theme:
